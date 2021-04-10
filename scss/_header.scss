@@ -2,6 +2,13 @@
     width: 100%;
 
     .container-fluid {
-        
+        .brand {
+            font-size: 2rem;
+            color: white;
+            span {
+                color: #fba419;
+                font-size: 3rem;
+            }
+        }
     }
 }
