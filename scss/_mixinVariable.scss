@@ -1,19 +1,28 @@
 $secHeader: Bernadette;
 $paragraph: LatoRegular;
 
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
 
-  $xs: 0;
-  $sm: 576px;
-  $md: 768px;
-  $lg: 992px;
-  $xl: 1200px;
-  $xxl: 1400px;
-
-
+// color variable
+$not_yellow: #fba419;
+$not_green: #2844bd;
+$gradient: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
+$hover_gradient: linear-gradient(-25deg, #fba419 0%, #2844bd 100%);
 
 // responsive
 @mixin resp($width) {
     @media only screen and (min-width: $width) {
         @content;
     }
+}
+
+@mixin fonts($f, $s, $t) {
+    font-family: $f;
+    font-size: $s;
+    text-transform: $t;
 }

@@ -1,14 +1,36 @@
-#header_wrapper {
-    width: 100%;
-
-    .container-fluid {
-        .brand {
-            font-size: 2rem;
-            color: white;
-            span {
-                color: #fba419;
-                font-size: 3rem;
-            }
+.navbar {
+    background-color: transparent;
+    .container-fluid{    
+    // brand style 
+    .navbar-brand {
+        font-family: LatoHeavy;
+        text-transform: lowercase;
+        color: black;
+        span {
+            color: $not_yellow;
+            font-size: 70px;
+            line-height: 0px;
         }
     }
+
+    // nav style 
+    .navbar-nav {
+        width: 100%!important;
+        // responsive 
+        @include resp ($lg) {
+            width: 80%!important;
+        }
+        @include resp ($xl) {
+            width: 70%!important;
+        }
+        @include resp ($xxl) {
+            width: 60%!important;
+        }
+        .nav-item {
+            text-align: center;
+            .nav-link {
+                
+            }
+        }
+    }}
 }

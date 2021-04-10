@@ -1,0 +1,24 @@
+#main {
+    .container {
+        .wrapper {
+            padding-top: 300px;
+            padding-bottom: 200px;
+            text-align: center;
+            .section_dis {
+                @include fonts(LatoBold, 3rem, capitalize);
+            }
+            // btn 
+            .btn_wrapper {
+                margin-top: 80px;
+                .btn {
+                    background-image: initial;
+                    background-color: white;
+                    color: black;
+                    &:hover {
+                        color: black!important;
+                    }
+                }
+            }
+        }
+    }
+}
