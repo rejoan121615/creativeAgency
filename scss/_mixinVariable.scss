@@ -1,0 +1,19 @@
+$secHeader: Bernadette;
+$paragraph: LatoRegular;
+
+
+  $xs: 0;
+  $sm: 576px;
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400px;
+
+
+
+// responsive
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}

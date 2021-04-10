@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/lato.regular.ttf");
+}
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/lato.bold.ttf");
+}
+@font-face {
+  font-family: "LatoHeavy";
+  src: url("../fonts/lato.heavy.ttf");
+}
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/lato.italic.ttf");
+}
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/lato.light.ttf");
+}
+@font-face {
+  font-family: "LatoMedium";
+  src: url("../fonts/lato.medium.ttf");
+}
+@font-face {
+  font-family: "Bernadette";
+  src: url("../fonts/bernadette.ttf");
+}
+
+/*# sourceMappingURL=style.css.map */
