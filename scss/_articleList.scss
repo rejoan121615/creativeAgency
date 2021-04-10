@@ -1,8 +1,22 @@
 #article_list {
     .container {
+        @include padX(120px, 120px);
         .list {
+                h2, p {
+                    text-align: center;
+                }
+
+
+            width: 100%;
+            // responsive 
+            @include resp ($lg) {
+                width: 30%;
+            }
             .card-title {
                 @include fonts(LatoBold, a, capitalize);
+            }
+            .btn {
+                margin-bottom: -25px;
             }
         }
     }

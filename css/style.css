@@ -60,6 +60,7 @@
 .navbar .container-fluid .navbar-nav .nav-item {
   text-align: center;
 }
+
 #main .container .wrapper {
   padding-top: 300px;
   padding-bottom: 200px;
@@ -82,10 +83,28 @@
   color: black !important;
 }
 
+#article_list .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#article_list .container .list {
+  width: 100%;
+}
+#article_list .container .list h2, #article_list .container .list p {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #article_list .container .list {
+    width: 30%;
+  }
+}
 #article_list .container .list .card-title {
   font-family: LatoBold;
   font-size: a;
   text-transform: capitalize;
+}
+#article_list .container .list .btn {
+  margin-bottom: -25px;
 }
 
 #head_main_wrapper {

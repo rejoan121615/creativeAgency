@@ -26,3 +26,8 @@ $hover_gradient: linear-gradient(-25deg, #fba419 0%, #2844bd 100%);
     font-size: $s;
     text-transform: $t;
 }
+
+@mixin padX($t, $b) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
