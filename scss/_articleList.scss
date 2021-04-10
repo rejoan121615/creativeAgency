@@ -1,3 +1,9 @@
 #article_list {
-    
+    .container {
+        .list {
+            .card-title {
+                @include fonts(LatoBold, a, capitalize);
+            }
+        }
+    }
 }

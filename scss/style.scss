@@ -2,6 +2,7 @@
 @import "mixinVariable";
 @import "header";
 @import "main";
+@import "articleList";
 
 #head_main_wrapper {
     background-image: $gradient;
@@ -37,6 +38,6 @@ a {
     color: white;
     border: none;
     &:hover {
-        color: white!important;
+        color: white !important;
     }
 }

@@ -82,6 +82,12 @@
   color: black !important;
 }
 
+#article_list .container .list .card-title {
+  font-family: LatoBold;
+  font-size: a;
+  text-transform: capitalize;
+}
+
 #head_main_wrapper {
   background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
 }
