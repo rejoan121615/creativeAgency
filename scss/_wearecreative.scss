@@ -1,0 +1,35 @@
+#we_are_creative {
+    background: url("../img/A_letter.png") no-repeat center bottom;
+    background-size: 450px;
+    background-position: center center;
+    @include resp($lg) {
+        background-size: 600px;
+        background-position: center bottom;
+    }
+    .container {
+        // common style
+        .para,
+        .section_heading {
+            mix-blend-mode: difference;
+            color: white;
+            @include resp($lg) {
+                mix-blend-mode: initial;
+                color: #212529;
+            }
+        }
+
+        padding-bottom: 65px;
+
+        .texts {
+        }
+
+        .comment {
+            margin-top: 65px;
+            // responsive
+            @include resp($lg) {
+                margin-top: 0px;
+            }
+            // common style
+        }
+    }
+}

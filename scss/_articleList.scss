@@ -2,21 +2,31 @@
     .container {
         @include padX(120px, 120px);
         .list {
-                h2, p {
-                    text-align: center;
-                }
+            h2,
+            p {
+                text-align: center;
+            }
 
+            cursor: pointer;
 
             width: 100%;
-            // responsive 
-            @include resp ($lg) {
-                width: 30%;
+            // responsive
+            @include resp($lg) {
+                width: 31.5%;
             }
             .card-title {
                 @include fonts(LatoBold, a, capitalize);
             }
-            .btn {
-                margin-bottom: -25px;
+            .btn_wrapper {
+                    margin-top: 60px;
+                .btn {
+                    margin-bottom: -25px;
+                    background-image: linear-gradient(
+                        to right,
+                        #fba419 0%,
+                        #2844bd 100%
+                    );
+                }
             }
         }
     }

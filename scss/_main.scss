@@ -1,8 +1,10 @@
 #main {
     .container {
         .wrapper {
-            padding-top: 300px;
-            padding-bottom: 200px;
+            // common style 
+            h1, h6, .para {
+                color: white;
+            }
             text-align: center;
             .section_dis {
                 @include fonts(LatoBold, 3rem, capitalize);

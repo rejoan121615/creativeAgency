@@ -1,11 +1,19 @@
 .navbar {
     background-color: transparent;
-    .container-fluid{    
+    .container-fluid{
+        @include padX(10px, 10px);
+        // responsive 
+        @include resp ($md) {
+            @include padX(25px, 25px);
+        }
+        // common style 
+        a, h1, li {
+            color: white!important;
+        }    
     // brand style 
     .navbar-brand {
         font-family: LatoHeavy;
         text-transform: lowercase;
-        color: black;
         span {
             color: $not_yellow;
             font-size: 70px;

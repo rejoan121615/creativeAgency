@@ -29,10 +29,22 @@
 .navbar {
   background-color: transparent;
 }
+.navbar .container-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .navbar .container-fluid {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.navbar .container-fluid a, .navbar .container-fluid h1, .navbar .container-fluid li {
+  color: white !important;
+}
 .navbar .container-fluid .navbar-brand {
   font-family: LatoHeavy;
   text-transform: lowercase;
-  color: black;
 }
 .navbar .container-fluid .navbar-brand span {
   color: #fba419;
@@ -62,9 +74,10 @@
 }
 
 #main .container .wrapper {
-  padding-top: 300px;
-  padding-bottom: 200px;
   text-align: center;
+}
+#main .container .wrapper h1, #main .container .wrapper h6, #main .container .wrapper .para, #main .container .wrapper .para_bold {
+  color: white;
 }
 #main .container .wrapper .section_dis {
   font-family: LatoBold;
@@ -88,14 +101,16 @@
   padding-bottom: 120px;
 }
 #article_list .container .list {
+  cursor: pointer;
   width: 100%;
 }
-#article_list .container .list h2, #article_list .container .list p {
+#article_list .container .list h2,
+#article_list .container .list p {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
   #article_list .container .list {
-    width: 30%;
+    width: 31.5%;
   }
 }
 #article_list .container .list .card-title {
@@ -103,8 +118,47 @@
   font-size: a;
   text-transform: capitalize;
 }
-#article_list .container .list .btn {
+#article_list .container .list .btn_wrapper {
+  margin-top: 60px;
+}
+#article_list .container .list .btn_wrapper .btn {
   margin-bottom: -25px;
+  background-image: linear-gradient(to right, #fba419 0%, #2844bd 100%);
+}
+
+#we_are_creative {
+  background: url("../img/A_letter.png") no-repeat center bottom;
+  background-size: 450px;
+  background-position: center center;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative {
+    background-size: 600px;
+    background-position: center bottom;
+  }
+}
+#we_are_creative .container {
+  padding-bottom: 65px;
+}
+#we_are_creative .container .para, #we_are_creative .container .para_bold,
+#we_are_creative .container .section_heading {
+  mix-blend-mode: difference;
+  color: white;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative .container .para, #we_are_creative .container .para_bold,
+#we_are_creative .container .section_heading {
+    mix-blend-mode: initial;
+    color: #212529;
+  }
+}
+#we_are_creative .container .comment {
+  margin-top: 65px;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative .container .comment {
+    margin-top: 0px;
+  }
 }
 
 #head_main_wrapper {
@@ -119,8 +173,43 @@ a {
 
 .section_heading {
   font-family: Bernadette;
-  font-size: 7rem;
+  font-size: 5rem;
   text-transform: capitalize;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .section_heading {
+    text-align: left;
+  }
+}
+
+.container, .container-fluid {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+@media only screen and (min-width: 768px) {
+  .container, .container-fluid {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container, .container-fluid {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container, .container-fluid {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container, .container-fluid {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
 }
 
 .para, .para_bold {
@@ -135,6 +224,10 @@ a {
 
 .btn_wrapper {
   text-align: center;
+}
+
+.btn_wrapper.cmt {
+  margin-top: 50px;
 }
 
 .btn {
