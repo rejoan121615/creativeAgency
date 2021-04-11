@@ -1,0 +1,79 @@
+#amazing_beauties {
+    .container {
+        position: relative;
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+            @include resp($md) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 25px;
+            }
+            div {
+                padding-left: 0px;
+                padding-right: 0px;
+                border-radius: 15px;
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        // text section
+        .text_over {
+            background-color: white;
+            width: 100%;
+            // width: 75%;
+            // max-width: 780px;
+            border-radius: 10px;
+            top: 545px;
+            left: 13%;
+            transition: box-shadow 0.6s ease-out;
+            cursor: pointer;
+            // hover effect 
+            &:hover {
+                box-shadow: 10px 10px 50px #00000094, -10px -10px 50px #00000094;
+            }   
+            // responsive
+            @include resp($sm) {
+                position: absolute;
+                left: 13%;
+                width: 80%;
+                top: 160px;
+                left: 10%;
+            }
+
+            @include resp($lg) {
+                width: 75%;
+                left: 12.5%;
+                top: 220px;
+            }
+            @include resp($xl) {
+                top: 340px;
+                width: 65%;
+                left: 18%;
+            }
+            @include resp ($xxl) {
+                top: 430px;
+            }
+            .text_container {
+                .section_heading {
+                    text-align: center;
+                }
+                text-align: center;
+
+                // button
+                .btn_wrapper {
+                    margin-top: 40px;
+                    @include resp ($xl) {
+                        margin-top: 75px;
+                    }
+                }
+            }
+        }
+    }
+}
