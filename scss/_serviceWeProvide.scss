@@ -1,0 +1,130 @@
+#service_we_provide {
+    background-color: $not_white;
+    background-image: url("../img/service_we_provide.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% 650px;
+
+    // responsive
+    @include resp($md) {
+        background-size: 100% 750px;
+    }
+    @include resp($lg) {
+        background-size: 0;
+    }
+    @include resp ($xl) {
+        background-size: 45% 100%;
+    }
+
+    @include resp ($xxl) {
+        background-size: 40% 100%;
+    }
+
+    .container {
+        .row {
+            article {
+                @include resp($md) {
+                    // width: 45%;
+                }
+                h1, .para , .btn_wrapper {
+                    text-align: center;
+                    // responsive 
+                    @include resp ($xl) {
+                        text-align: left;
+                    } 
+                }
+                .para {
+                    @include resp ($xxl) {
+                        width: 80%!important;
+                    }
+                }
+            }
+            .btn_wrapper {
+                margin-top: 60px;
+            }
+        }
+        // service list section
+        .service_list {
+            background-image: $gradient;
+            border-radius: 20px;
+            width: 95%;
+            max-width: 480px;
+            margin-top: 130px;
+
+            // responsive
+            @include resp($md) {
+                margin-top: 165px;
+            }
+            @include resp($lg) {
+                max-width: initial;
+                width: 33.33%;
+                margin-top: 0px;
+            }
+            // @include resp ($md) {
+            //     width: 475px;
+            // }
+            .list_container {
+                height: 100%;
+                @include resp($lg) {
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+                .item {
+                    text-align: center;
+                    // height: (100% / 3);
+                    display: flex;
+                    flex-flow: column wrap;
+                    border-bottom: 1px dotted white;
+                    // border style
+                    &:nth-child(odd) {
+                        border-right: 1px dotted white;
+                        @include resp ($lg) {
+                            border-right: none;
+                        }
+                        @include resp ($xl) {
+                            border-right: 1px dotted white;
+                        }
+                    }
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        border-bottom: none;
+                        @include resp ($lg) {
+                            border-bottom: 1px dotted white;
+                        }
+                        @include resp ($xl) {
+                            border-bottom: none;
+                        } 
+                    }
+                    @include resp ($lg) {
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                    span {
+                        margin-top: 15px;
+                        &::before {
+                            font-size: 3.5rem;
+                            @include resp($md) {
+                                font-size: 4.5rem;
+                            }
+                            margin-left: 0px;
+                        }
+                    }
+                    h5 {
+                        @include fonts(LatoHeavy, 1.2rem, capitalize);
+                        text-align: center;
+                        @include resp ($xl) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    // common style
+                    span::before,
+                    h5 {
+                        color: white;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@
 @import "articleList";
 @import "wearecreative";
 @import "amazingBeauties";
+@import "serviceWeProvide";
 
 #head_main_wrapper {
     background-image: $gradient;
@@ -69,5 +70,12 @@ a {
     border: none;
     &:hover {
         color: white !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, a, .para, .btn_wrapper {
+    text-align: center;
+    @include resp ($md) {
+        text-align: left;
     }
 }
