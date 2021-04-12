@@ -6,6 +6,7 @@
 @import "wearecreative";
 @import "amazingBeauties";
 @import "serviceWeProvide";
+@import "perfectTeam";
 
 #head_main_wrapper {
     background-image: $gradient;
@@ -19,29 +20,30 @@ a {
 
 .section_heading {
     @include fonts(Bernadette, 3.8rem, capitalize);
-    @include resp ($lg) {
+    @include resp($lg) {
         font-size: 5rem;
     }
     text-align: center;
-    // responsive 
-    @include resp ($lg) {
+    // responsive
+    @include resp($lg) {
         text-align: left;
     }
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
     @include padX(75px, 75px);
-    // responsive 
-    @include resp ($md) {
-        @include padX (90px, 90px);
+    // responsive
+    @include resp($md) {
+        @include padX(90px, 90px);
     }
-    @include resp ($lg) {
+    @include resp($lg) {
         @include padX(110px, 110px);
     }
-    @include resp ($xl) {
+    @include resp($xl) {
         @include padX(130px, 130px);
     }
-    @include resp ($xxl) {
+    @include resp($xxl) {
         @include padX(160px, 160px);
     }
 }
@@ -73,9 +75,17 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, h6, a, .para, .btn_wrapper {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.para,
+.btn_wrapper {
     text-align: center;
-    @include resp ($md) {
+    @include resp($md) {
         text-align: left;
     }
 }

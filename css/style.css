@@ -379,6 +379,41 @@
   display: inline-block;
 }
 
+#team_section .container {
+  background: url("../img/team_bg.png") no-repeat bottom center;
+  background-size: 100% 300px;
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+#team_section .container .section_heading {
+  text-align: center;
+}
+#team_section .container .para, #team_section .container .para_bold {
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  #team_section .container .team_mate {
+    margin-top: 5rem !important;
+  }
+}
+#team_section .container .team_mate .member img {
+  border-radius: 10px;
+}
+#team_section .container .team_mate .member .card-body {
+  margin-top: 20px;
+}
+#team_section .container .team_mate .member .card-body h5 {
+  font-family: LatoBold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+#team_section .container .team_mate .member .card-body p {
+  color: #48484885;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 #head_main_wrapper {
   background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
 }
@@ -406,30 +441,35 @@ a {
   }
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
   padding-top: 75px;
   padding-bottom: 75px;
 }
 @media only screen and (min-width: 768px) {
-  .container, .container-fluid {
+  .container,
+.container-fluid {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .container, .container-fluid {
+  .container,
+.container-fluid {
     padding-top: 110px;
     padding-bottom: 110px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .container, .container-fluid {
+  .container,
+.container-fluid {
     padding-top: 130px;
     padding-bottom: 130px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .container, .container-fluid {
+  .container,
+.container-fluid {
     padding-top: 160px;
     padding-bottom: 160px;
   }
@@ -467,11 +507,29 @@ a {
   color: white !important;
 }
 
-h1, h2, h3, h4, h5, h6, a, .para, .para_bold, .btn_wrapper {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.para,
+.para_bold,
+.btn_wrapper {
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  h1, h2, h3, h4, h5, h6, a, .para, .para_bold, .btn_wrapper {
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.para,
+.para_bold,
+.btn_wrapper {
     text-align: left;
   }
 }

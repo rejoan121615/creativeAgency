@@ -1,0 +1,36 @@
+#team_section {
+    .container {
+        background: url("../img/team_bg.png") no-repeat bottom center;
+        background-size: 100% 300px;
+        @include padX(130px, 60px);
+        .section_heading {
+            text-align: center;
+        }
+        .para {
+            text-align: center;
+        }
+        // team mates list
+        .team_mate {
+            @include resp($xl) {
+                margin-top: 5rem !important;
+            }
+            .member {
+                img {
+                    border-radius: 10px;
+                }
+                .card-body {
+                    margin-top: 20px;
+                    h5 {
+                        @include fonts(LatoBold, 1.5rem, capitalize);
+                        text-align: center;
+                    }
+                    p {
+                        color: #48484885;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
