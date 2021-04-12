@@ -8,6 +8,7 @@
 @import "serviceWeProvide";
 @import "perfectTeam";
 @import "teamMateHighlight";
+@import "pricingSection";
 
 #head_main_wrapper {
     background-image: $gradient;
@@ -22,7 +23,7 @@ a {
 .section_heading {
     @include fonts(Bernadette, 3.8rem, capitalize);
     @include resp($lg) {
-        font-size: 5rem;
+        font-size: 4.3rem;
     }
     text-align: center;
     // responsive

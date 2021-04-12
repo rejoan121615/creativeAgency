@@ -26,6 +26,10 @@
   font-family: "Bernadette";
   src: url("../fonts/bernadette.ttf");
 }
+@font-face {
+  font-family: MyriadPro;
+  src: url("../fonts/Myriad Pro Black Condensed.otf");
+}
 .navbar {
   background-color: transparent;
 }
@@ -520,6 +524,145 @@
   margin-top: 80%;
 }
 
+#pricing {
+  background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%), url(../img/team_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 25%, 100% 59%;
+  background-position: top left, bottom center;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  #pricing {
+    background-size: 49% 100%, 49% 100%;
+    background-position: left center, right center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #pricing {
+    background-size: 40% 100%, 58% 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #pricing .container .container_wrapper {
+    width: 1190px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #pricing .container .container_wrapper {
+    width: 110% !important;
+    max-width: 1600px !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #pricing .container .container_wrapper {
+    width: 1600px !important;
+    max-width: initial !important;
+  }
+}
+#pricing .container .container_wrapper .pricing .price {
+  padding-top: 70px !important;
+}
+#pricing .container .container_wrapper .pricing .price .para_bold {
+  font-family: LatoBold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+@media only screen and (min-width: 1400px) {
+  #pricing .container .container_wrapper .pricing .price .section_heading {
+    text-align: center;
+  }
+}
+#pricing .container .container_wrapper .pricing .price h1.display-1 {
+  background: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
+  font-weight: bold;
+  font-size: 6.5rem;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+#pricing .container .container_wrapper .pricing .price .discription .para, #pricing .container .container_wrapper .pricing .price .discription .para_bold {
+  text-align: center;
+}
+#pricing .container .container_wrapper .pricing .features {
+  background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
+}
+#pricing .container .container_wrapper .pricing .features h2,
+#pricing .container .container_wrapper .pricing .features p,
+#pricing .container .container_wrapper .pricing .features li {
+  color: white;
+}
+#pricing .container .container_wrapper .pricing .features .mini_sec_h {
+  margin-top: 55px;
+}
+#pricing .container .container_wrapper .pricing .features .mini_sec_h h2,
+#pricing .container .container_wrapper .pricing .features .mini_sec_h .para_bold {
+  font-family: MyriadPro;
+  font-size: 4rem;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 35px;
+}
+#pricing .container .container_wrapper .pricing .features .mini_sec_h .para_bold {
+  font-size: 2rem;
+}
+#pricing .container .container_wrapper .pricing .features .mini_sec_h .btn_wrapper .btn {
+  background-color: white;
+}
+#pricing .container .container_wrapper .pricing .features .para_bold {
+  text-transform: capitalize;
+}
+#pricing .container .container_wrapper .pricing .features .feature_list {
+  list-style-image: url("../icons/checked.png");
+}
+#pricing .container .container_wrapper .pricing .features .feature_list li {
+  margin-bottom: 10px;
+}
+#pricing .container .container_wrapper .pricing .features .feature_list li:last-child {
+  margin-bottom: 0px;
+}
+#pricing .container .container_wrapper .pricing .features .btn_wrapper {
+  text-align: center;
+  margin-top: 160px;
+}
+#pricing .container .container_wrapper .pricing .features .btn_wrapper .btn {
+  background-color: white;
+  background-image: none;
+  color: black !important;
+}
+@media only screen and (min-width: 992px) {
+  #pricing .container .container_wrapper .take_your_website {
+    margin-top: 110px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #pricing .container .container_wrapper .take_your_website h1,
+#pricing .container .container_wrapper .take_your_website .para_bold,
+#pricing .container .container_wrapper .take_your_website .para {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #pricing .container .container_wrapper .take_your_website h1,
+#pricing .container .container_wrapper .take_your_website .para_bold,
+#pricing .container .container_wrapper .take_your_website .para {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #pricing .container .container_wrapper .take_your_website {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #pricing .container .container_wrapper .take_your_website .para,
+#pricing .container .container_wrapper .take_your_website .para_bold {
+    width: 85%;
+  }
+}
+
 #head_main_wrapper {
   background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
 }
@@ -538,7 +681,7 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .section_heading {
-    font-size: 5rem;
+    font-size: 4.3rem;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -1,0 +1,150 @@
+#pricing {
+    background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%),
+        url(../img/team_bg.png);
+    background-repeat: no-repeat;
+    // background-size: 40% 100%, 59% 100%;
+    background-size: 100% 25%, 100% 59%;
+    background-position: top left, bottom center;
+    // background-position: left center, right center;
+    overflow: hidden;
+
+    // responsive
+    @include resp($lg) {
+        background-size: 49% 100%, 49% 100%;
+        background-position: left center, right center;
+    }
+
+    @include resp($xl) {
+        background-size: 40% 100%, 58% 100%;
+    }
+
+    .container {
+        .container_wrapper {
+            // width: 100%;
+            // responsive
+            @include resp($xl) {
+                width: 1190px;
+            }
+            @include resp($xxl) {
+                width: 110%!important;
+                max-width: 1600px!important;
+            }
+            @include resp (1600px) {
+                width: 1600px!important;
+                max-width: initial!important;
+            }
+            // pricing
+            .pricing {
+                // width: 1060px;
+
+                // price
+                .price {
+                    padding-top: 70px !important;
+                    .para_bold {
+                        @include fonts(LatoBold, 2rem, capitalize);
+                        text-align: center;
+                    }
+                    .section_heading {
+                        @include resp ($xxl) {
+                            text-align: center;
+                        }
+                    }
+                    h1.display-1 {
+                        background: $gradient;
+                        font-weight: bold;
+                        font-size: 6.5rem;
+                        text-align: center;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin-top: 65px;
+                        margin-bottom: 65px;
+                    }
+                    .discription {
+                        .para {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                // features style
+                .features {
+                    background-image: $gradient;
+                    h2,
+                    p,
+                    li {
+                        color: white;
+                    }
+                    .mini_sec_h {
+                        margin-top: 55px;
+
+                        h2,
+                        .para_bold {
+                            @include fonts(MyriadPro, 4rem, capitalize);
+                            text-align: center;
+                            line-height: 35px;
+                        }
+                        h2 {
+                        }
+                        .para_bold {
+                            font-size: 2rem;
+                        }
+
+                        .btn_wrapper {
+                            .btn {
+                                background-color: white;
+                            }
+                        }
+                    }
+                    .para_bold {
+                        text-transform: capitalize;
+                    }
+                    // features list
+                    .feature_list {
+                        list-style-image: url("../icons/checked.png");
+                        li {
+                            margin-bottom: 10px;
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .btn_wrapper {
+                        text-align: center;
+                        margin-top: 160px;
+                        .btn {
+                            background-color: white;
+                            background-image: none;
+                            color: black !important;
+                        }
+                    }
+                }
+            }
+            // take your website
+            .take_your_website {
+                // responsive
+                @include resp($lg) {
+                    margin-top: 110px !important;
+                }
+                h1,
+                .para_bold,
+                .para {
+                    @include resp ($lg) {
+                        text-align: center;
+                    }
+                    @include resp ($xxl) {
+                        text-align: left;
+                    }
+                }
+                @include resp($xl) {
+                    margin-top: 0px !important;
+                }
+                .para, 
+                .para_bold {
+                    @include resp ($xxl) {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
