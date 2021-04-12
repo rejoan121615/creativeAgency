@@ -7,6 +7,10 @@
         background-position: center bottom;
     }
     .container {
+        @include padX(0px, 0px);
+        @include resp($lg) {
+            padding-top: 50px;
+        }
         // common style
         .para,
         .section_heading {
@@ -21,15 +25,34 @@
         padding-bottom: 65px;
 
         .texts {
+            .btn_wrapper {
+                text-align: center;
+                @include resp ($lg) {
+                    text-align: left;
+                }
+            }
         }
 
         .comment {
             margin-top: 65px;
+            position: relative;
+            &::before {
+                content: "“";
+                font-family: Icons;
+                position: absolute;
+                font-size: 17rem;
+                line-height: 0px;
+                left: -110px;
+                top: 40px;
+                display: none;
+                @include resp ($lg) {
+                    display: block;
+                }
+            }
             // responsive
             @include resp($lg) {
                 margin-top: 0px;
             }
-            // common style
         }
     }
 }

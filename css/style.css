@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "LatoRegular";
   src: url("../fonts/lato.regular.ttf");
@@ -29,6 +30,10 @@
 @font-face {
   font-family: MyriadPro;
   src: url("../fonts/Myriad Pro Black Condensed.otf");
+}
+@font-face {
+  font-family: Icons;
+  src: url("../fonts/Berlin Sans FB Demi Bold.ttf");
 }
 .navbar {
   background-color: transparent;
@@ -185,7 +190,14 @@
   }
 }
 #we_are_creative .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-bottom: 65px;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative .container {
+    padding-top: 50px;
+  }
 }
 #we_are_creative .container .para, #we_are_creative .container .para_bold,
 #we_are_creative .container .section_heading {
@@ -199,8 +211,32 @@
     color: #212529;
   }
 }
+#we_are_creative .container .texts .btn_wrapper {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative .container .texts .btn_wrapper {
+    text-align: left;
+  }
+}
 #we_are_creative .container .comment {
   margin-top: 65px;
+  position: relative;
+}
+#we_are_creative .container .comment::before {
+  content: "“";
+  font-family: Icons;
+  position: absolute;
+  font-size: 17rem;
+  line-height: 0px;
+  left: -110px;
+  top: 40px;
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  #we_are_creative .container .comment::before {
+    display: block;
+  }
 }
 @media only screen and (min-width: 992px) {
   #we_are_creative .container .comment {
