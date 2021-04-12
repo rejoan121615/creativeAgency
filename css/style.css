@@ -80,16 +80,44 @@
 #main .container .wrapper {
   text-align: center;
 }
-#main .container .wrapper h1, #main .container .wrapper h6, #main .container .wrapper .para, #main .container .wrapper .para_bold {
+#main .container .wrapper h1,
+#main .container .wrapper h6,
+#main .container .wrapper .para,
+#main .container .wrapper .para_bold {
   color: white;
+  text-align: center;
 }
 #main .container .wrapper .section_dis {
   font-family: LatoBold;
   font-size: 3rem;
   text-transform: capitalize;
 }
+#main .container .wrapper .section_heading {
+  font-size: 5.5rem;
+}
+@media only screen and (min-width: 576px) {
+  #main .container .wrapper .section_heading {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #main .container .wrapper .section_heading {
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main .container .wrapper .section_heading {
+    font-size: 7.8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main .container .wrapper .section_heading {
+    font-size: 9rem;
+  }
+}
 #main .container .wrapper .btn_wrapper {
   margin-top: 80px;
+  text-align: center;
 }
 #main .container .wrapper .btn_wrapper .btn {
   background-image: initial;
@@ -105,8 +133,17 @@
   padding-bottom: 120px;
 }
 #article_list .container .list {
+  margin-bottom: 90px !important;
   cursor: pointer;
   width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  #article_list .container .list {
+    margin-bottom: 0px !important;
+  }
+}
+#article_list .container .list:last-child {
+  margin-bottom: 0px;
 }
 #article_list .container .list h2,
 #article_list .container .list p {
@@ -124,6 +161,12 @@
 }
 #article_list .container .list .btn_wrapper {
   margin-top: 60px;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #article_list .container .list .btn_wrapper {
+    margin-top: 25px;
+  }
 }
 #article_list .container .list .btn_wrapper .btn {
   margin-bottom: -25px;
@@ -724,10 +767,6 @@ footer h3 a {
   color: #00aeff;
 }
 
-#head_main_wrapper {
-  background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
-}
-
 a {
   font-family: LatoBold;
   text-transform: uppercase;
@@ -842,6 +881,10 @@ a,
 .btn_wrapper {
     text-align: left;
   }
+}
+
+#head_main_wrapper {
+  background-image: linear-gradient(145deg, #fba419b0 0%, #2844bdcf 100%), url("../img/main_bg_op.png");
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,23 +1,42 @@
 #main {
     .container {
         .wrapper {
-            // common style 
-            h1, h6, .para {
+            // common style
+            h1,
+            h6,
+            .para {
                 color: white;
+                text-align: center;
             }
             text-align: center;
             .section_dis {
                 @include fonts(LatoBold, 3rem, capitalize);
             }
-            // btn 
+            .section_heading {
+                font-size: 5.5rem;
+                @include resp ($sm) {
+                    font-size: 6rem;
+                }
+                @include resp ($md) {
+                    font-size: 7rem;
+                }
+                @include resp ($lg) {
+                    font-size: 7.8rem;
+                }
+                @include resp($xl) {
+                    font-size: 9rem;
+                }
+            }
+            // btn
             .btn_wrapper {
                 margin-top: 80px;
+                text-align: center;
                 .btn {
                     background-image: initial;
                     background-color: white;
                     color: black;
                     &:hover {
-                        color: black!important;
+                        color: black !important;
                     }
                 }
             }

@@ -2,6 +2,14 @@
     .container {
         @include padX(120px, 120px);
         .list {
+            // responsive
+            margin-bottom: 90px!important;
+            @include resp ($lg) {
+                margin-bottom: 0px!important;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
             h2,
             p {
                 text-align: center;
@@ -18,7 +26,11 @@
                 @include fonts(LatoBold, a, capitalize);
             }
             .btn_wrapper {
-                    margin-top: 60px;
+                margin-top: 60px;
+                @include resp ($lg) {
+                    margin-top: 25px;
+                }
+                text-align: center;
                 .btn {
                     margin-bottom: -25px;
                     background-image: linear-gradient(
