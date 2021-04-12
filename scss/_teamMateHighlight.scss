@@ -1,0 +1,63 @@
+#team_mate_highlight {
+    .container {
+        // aritcle style 
+        article {
+            h3, h1, .para {
+                text-align: center;
+                @include resp ($xl) {
+                    text-align: left;
+                }
+            }
+            h3.para_bold {
+                @include fonts (LatoBold, 1.5rem, capitalize);
+            }
+            .section_heading {
+                @include resp ($lg) {
+                    margin-top: 105px;
+                }
+            }
+        }
+        // highlight image style 
+        div.highlight {
+
+            img {
+
+            }
+        }
+
+
+        
+        // discription style 
+        .discription {
+            // style 
+            h3, .para {
+                color: white;
+            }
+            background-image: $gradient;
+            h3 {
+                @include fonts(unquote("'LatoMedium', 'LatoLight'"), 2rem, capitalize)
+            }
+            // social media list 
+            .social_media {
+                display: flex;
+                flex-flow: row wrap;
+                a {
+                    color: transparent;
+                    &:first-child {
+                        &::before {
+                            margin-left: 0px;
+                        }
+                    }
+                    span {
+                        &::before {
+                            font-size: 3rem;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

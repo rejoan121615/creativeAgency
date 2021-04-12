@@ -1,0 +1,15 @@
+
+$point: 0;
+
+@mixin widht() {
+    @while ($point <= 100) {
+        
+    }
+}
+
+@mixin allWidth ($w) {
+    width: $w;
+    @include resp ($sm) {
+        
+    }
+}
