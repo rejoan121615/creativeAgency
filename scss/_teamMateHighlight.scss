@@ -5,12 +5,13 @@
     }
     .container {
         // aritcle style
-        @include padX(0, 0);
+        @include padX(0, 100px);
         @include resp ($lg) {
             padding-top: 80px;
         }
-        @include resp ($xl) {
-            padding-top: 0px;
+        @include resp ($xxl) {
+            @include padX (0px!important, 0px!important);
+            margin-bottom: 100px;
         }
         article {
             h3,
@@ -48,12 +49,22 @@
         }
         // highlight image style
         div.highlight {
+            margin-top: 55px!important;
+            @include resp ($sm) {
+                margin-top: 80px!important;
+            } 
+            @include resp ($lg) {
+                margin-top: 0px!important;
+            }
             img {
             }
         }
 
         // discription style
         .discription {
+            @include resp ($sm) {
+                margin-top: 80px!important;
+            }
             // style
             h3,
             .para {
@@ -105,6 +116,9 @@
             .social_media {
                 width: 100%;
                 margin-top: 80%;
+                @include resp ($xxl) {
+                    margin-top: 70%;
+                }
             }
         }
     }

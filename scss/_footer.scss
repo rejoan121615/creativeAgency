@@ -1,5 +1,5 @@
 footer {
-    @include padX(40px, 40px);
+    @include padX(0px, 40px);
     text-align: center;
     h3 {
         @include fonts(LatoBold, 1.5rem, capitalize);

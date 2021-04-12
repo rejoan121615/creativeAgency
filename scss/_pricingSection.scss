@@ -121,6 +121,7 @@
             }
             // take your website
             .take_your_website {
+                margin-top: 100px!important;
                 // responsive
                 @include resp($lg) {
                     margin-top: 110px !important;

@@ -1,12 +1,17 @@
 #contact {
     .container {
+        @include padX(150px, 40px);
+        // responsive
+        @include resp($lg) {
+            @include padX(90px, 35px);
+        }
         .row {
             .items {
                 display: flex;
                 margin-left: 35px;
                 margin-bottom: 40px;
-                // responsive 
-                @include resp ($lg) {
+                // responsive
+                @include resp($lg) {
                     margin-left: 0px;
                 }
                 .img_wrap {
@@ -19,7 +24,7 @@
 
                 .discription {
                     h6 {
-                        @include fonts (LatoBold, 1.5rem, uppercase);
+                        @include fonts(LatoBold, 1.5rem, uppercase);
                         text-align: left;
                     }
                     .para {

@@ -318,6 +318,7 @@
 }
 #amazing_beauties .container .text_over .text_container .btn_wrapper {
   margin-top: 40px;
+  text-align: center;
 }
 @media only screen and (min-width: 1200px) {
   #amazing_beauties .container .text_over .text_container .btn_wrapper {
@@ -505,16 +506,18 @@
 }
 #team_mate_highlight .container {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 100px;
 }
 @media only screen and (min-width: 992px) {
   #team_mate_highlight .container {
     padding-top: 80px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   #team_mate_highlight .container {
-    padding-top: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 100px;
   }
 }
 #team_mate_highlight .container article h3,
@@ -555,8 +558,26 @@
   background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
   border-radius: 25px;
 }
+#team_mate_highlight .container div.highlight {
+  margin-top: 55px !important;
+}
+@media only screen and (min-width: 576px) {
+  #team_mate_highlight .container div.highlight {
+    margin-top: 80px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #team_mate_highlight .container div.highlight {
+    margin-top: 0px !important;
+  }
+}
 #team_mate_highlight .container .discription {
   background-image: linear-gradient(145deg, #fba419 0%, #2844bd 100%);
+}
+@media only screen and (min-width: 576px) {
+  #team_mate_highlight .container .discription {
+    margin-top: 80px !important;
+  }
 }
 #team_mate_highlight .container .discription h3,
 #team_mate_highlight .container .discription .para,
@@ -601,6 +622,11 @@
 #team_mate_highlight .floating_container .row .social_media {
   width: 100%;
   margin-top: 80%;
+}
+@media only screen and (min-width: 1400px) {
+  #team_mate_highlight .floating_container .row .social_media {
+    margin-top: 70%;
+  }
 }
 
 #pricing {
@@ -711,6 +737,9 @@
   background-image: none;
   color: black !important;
 }
+#pricing .container .container_wrapper .take_your_website {
+  margin-top: 100px !important;
+}
 @media only screen and (min-width: 992px) {
   #pricing .container .container_wrapper .take_your_website {
     margin-top: 110px !important;
@@ -755,6 +784,16 @@
   text-align: center;
 }
 
+#contact .container {
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 992px) {
+  #contact .container {
+    padding-top: 90px;
+    padding-bottom: 35px;
+  }
+}
 #contact .container .row .items {
   display: flex;
   margin-left: 35px;
@@ -787,7 +826,7 @@
 }
 
 footer {
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 40px;
   text-align: center;
 }
