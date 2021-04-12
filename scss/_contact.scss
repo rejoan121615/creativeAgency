@@ -1,0 +1,36 @@
+#contact {
+    .container {
+        .row {
+            .items {
+                display: flex;
+                margin-left: 35px;
+                margin-bottom: 40px;
+                // responsive 
+                @include resp ($lg) {
+                    margin-left: 0px;
+                }
+                .img_wrap {
+                    margin-right: 30px;
+                }
+                img {
+                    width: 85px;
+                    display: inline-block;
+                }
+
+                .discription {
+                    h6 {
+                        @include fonts (LatoBold, 1.5rem, uppercase);
+                        text-align: left;
+                    }
+                    .para {
+                        margin: 0px;
+                        text-align: left;
+                        &:first-child {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
